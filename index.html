@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <title>To-Do List</title>
+</head>
+<body>
+  <div class="container">
+    <div class="feedback"></div>
+    <form id="itemForm">
+      <h1>To-Do List</h1>
+      <div class="input-group">
+        <input type="text" id="itemInput" placeholder="Enter task name..." />
+        <input type="date" id="targetDateInput" placeholder="Select target date..." />
+        <button id="add-item" class="btn" type="submit">Add Item</button>
+      </div>
+    </form>
+    <div class="item-container">
+      <div class="item-list"></div>
+      <button type="button" class="btn" id="clear-list">Clear All Items</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
